@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.gsahu.newsfeed.model.Article" table="ARTICLE">
+		<id name="id" column="ARTICLE_ID" type="int">
+			<generator class="sequence">
+				<param name="sequence">ARTICLE_ID_SEQ</param>
+			</generator>
+		</id>
+
+		<property name="author" column="AUTHOR" type="string" />
+		<property name="title" column="TITLE" type="string" />
+		<property name="description" column="DESCRIPTION" type="string" />
+		<property name="url" column="URL" type="string" />
+		<property name="urlToImage" column="URL_TO_IMG" type="string" />
+		<property name="publishedAt" column="PUBLISHED_AT" type="string" />
+	</class>
+</hibernate-mapping>
