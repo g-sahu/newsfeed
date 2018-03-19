@@ -15,5 +15,7 @@
 		<property name="url" column="URL" type="string" />
 		<property name="urlToImage" column="URL_TO_IMG" type="string" />
 		<property name="publishedAt" column="PUBLISHED_AT" type="string" />
+		
+		<many-to-one name="newsfeedAudit" class="com.gsahu.newsfeed.model.NewsfeedAudit" column="txn_id" not-null="true" cascade="all" />
 	</class>
 </hibernate-mapping>

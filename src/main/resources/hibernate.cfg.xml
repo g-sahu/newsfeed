@@ -8,5 +8,6 @@
    		<property name="show_sql">true</property>
    		
    		<mapping resource="article.hbm.xml"/>
+   		<mapping resource="newsfeed_audit.hbm.xml"/>
    	</session-factory>
 </hibernate-configuration>

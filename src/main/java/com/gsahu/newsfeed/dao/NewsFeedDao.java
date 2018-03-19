@@ -18,8 +18,8 @@ public class NewsFeedDao {
     private SessionFactory sessionFactory;
 	
 	public void saveArticles(List<Article> articles) {
-		Session session = sessionFactory.openSession();
 		Iterator<Article> articleIterator = articles.iterator();
+		Session session = sessionFactory.openSession();
 		Transaction tx = session.beginTransaction();
 		
 		try {
@@ -35,5 +35,4 @@ public class NewsFeedDao {
 			session.close();
 		}
 	}
-
 }

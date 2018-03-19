@@ -1,7 +1,5 @@
 package com.gsahu.newsfeed.model;
 
-import java.util.Date;
-
 import com.google.gson.annotations.SerializedName;
 
 public class Article {
